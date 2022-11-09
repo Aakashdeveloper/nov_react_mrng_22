@@ -61,9 +61,96 @@ single page application using component based structure
 
 React JS @ 9:00 AM (IST) by Mr.Aakash
 Day-1 https://youtu.be/T1pY1WgkEnk
+Day-2 https://youtu.be/E2O69CKO8P4
 
 https://medium.com/techmagic/reactjs-vs-angular5-vs-vue-js-what-to-choose-in-2018-b91e028fa91d
 
 ///////////////////////////
 NPM > Node Package Manager
-(Registery)(2,164,547)
+https://www.npmjs.com/
+(Registery)()
+    
+2,164,547
+2,165,591
+----------
+1044
+-------
+
+Object {}
+Array []
+
+JSON (Javascript object notation)
+(Way to represent data)
+(key value pair of data)
+
+[
+    {
+        "name":"Amrita",
+        "city":"London"
+    },
+    {
+        "name":"Karan",
+        "city":"Mumbai"
+    },
+    {
+        "name":"Nikita",
+        "city":"Delhi",
+        "age":25
+    }
+]
+
+
+///////////////
+package.json
+> Entry point to the application
+> Contains Meta Data (Name,version ,author)
+> Package require for the application
+> Command/Script start,test,build
+
+
+//////////////////////////////////////
+Step to generate package.json
+* Nodejs must be install in your laptop
+> Go inside the folder using command prompt
+> npm init
+> Answer all questions
+> type "yes"
+
+//////////////////////////////////
+Step to install packages
+-----------------------------
+> Go inside the folder using command prompt
+> npm i packagesName/ npm install packageName
+
+
+node_module> Folder that conations package
+package-lock.json > dependency tree
+.gitignore > Avoid pushing to git
+readme.md> detail description of application
+
+* Local Dependencies
+* Global Dependencies
+* Dev Dependencies
+
+
+Dear Students please pay the fee for ___(Course name)__ (time) by Mr. ____ Fee  Rs. ___
+Bank Details 
+Name: Naresh i Technologies
+A/C No. 50200022639833     
+Bank: HDFC
+A/C Type: Current Account
+IFSC Code: HDFC0001627
+MICR Code: 500240035
+Branch Code: 001627
+Branch:  Ameerpet
+
+Note: If you want to use Phonepe or Google Pay then follow the below steps.
+
+You can find the option Bank Transfer in Phonepe and Google pay. There you can enter our bank account number and you can transfer the amount.  Please mention your Name on the receipt and send a email once the payment is done to support@nareshit.com.
+  
+For any Queries, You can can Call us on +91-8179191999 or email us to support@nareshit.com 
+
+Please share your feedback to  Admin
+
+Thanks and Regards 
+Naresh
