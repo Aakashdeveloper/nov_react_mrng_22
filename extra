@@ -62,6 +62,7 @@ single page application using component based structure
 React JS @ 9:00 AM (IST) by Mr.Aakash
 Day-1 https://youtu.be/T1pY1WgkEnk
 Day-2 https://youtu.be/E2O69CKO8P4
+Day-3 https://youtu.be/g-fztEChlnY
 
 https://medium.com/techmagic/reactjs-vs-angular5-vs-vue-js-what-to-choose-in-2018-b91e028fa91d
 
@@ -129,8 +130,59 @@ package-lock.json > dependency tree
 readme.md> detail description of application
 
 * Local Dependencies
+> every package can be used in the folder where you install
+> Scope of package is inside folder
+> This dependency is only accessible after application started
+> npm i packagesName
+
 * Global Dependencies
+> Will install in machine/laptop
+> Can be used by any application
+> Need admin permission to install
+> Only use for purposes of starting/generating the app
+
+
 * Dev Dependencies
+
+
+//////////////////////////////////
+Step to generate react app
+-----------------------------
+* Nodejs must be install in your laptop
+> open cmd/terminal
+> go inside folder where you want app
+> npx create-react-app appname
+
+npm vs npx
+npm > node package Manager
+npx > node package execute
+
+//////////////////////
+# window
+* One Time Step
+> Open cmd as adminstrator
+> npm i -g create-react-app
+
+* Next all time you want new application
+> Open cmd and go inside folder
+> create-react-app appname
+
+# mac/linux
+* One Time Step
+> Open terminal
+> sudo npm i -g create-react-app
+
+* Next all time you want new application
+> Open terminal and go inside folder
+> create-react-app appname
+
+//////////////////////////////////
+Step to run react app
+-----------------------------
+> open cmd/terminal and go inside folder
+> npm start
+> http://localhost:3000
+
 
 
 Dear Students please pay the fee for ___(Course name)__ (time) by Mr. ____ Fee  Rs. ___
