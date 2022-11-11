@@ -59,10 +59,7 @@ Framework > Bigger unit
 React is a frontend lib/fam which help to build
 single page application using component based structure
 
-React JS @ 9:00 AM (IST) by Mr.Aakash
-Day-1 https://youtu.be/T1pY1WgkEnk
-Day-2 https://youtu.be/E2O69CKO8P4
-Day-3 https://youtu.be/g-fztEChlnY
+Y
 
 https://medium.com/techmagic/reactjs-vs-angular5-vs-vue-js-what-to-choose-in-2018-b91e028fa91d
 
@@ -184,6 +181,41 @@ Step to run react app
 > http://localhost:3000
 
 
+React > is the main package require to make application
+React-dom > help to display content on the browser
+React-script > help to run the application
+
+
+ES> Ecma Script (Standard of writing Code)
+
+//es6
+import React from 'react';
+//es5
+let React = require('react');
+
+//es5
+function add(a,b){
+    return a+b
+}
+
+//es6
+let add = (a,b) => {return a+b}
+
+
+function add(a,b){
+    let out = [a,b]
+    return out
+}
+
+add(1,2)
+2
+
+
+React JS @ 9:00 AM (IST) by Mr.Aakash
+Day-1 https://youtu.be/T1pY1WgkEnk
+Day-2 https://youtu.be/E2O69CKO8P4
+Day-3 https://youtu.be/g-fztEChln
+Day-4 https://youtu.be/q70i3SAZ3ME
 
 Dear Students please pay the fee for ___(Course name)__ (time) by Mr. ____ Fee  Rs. ___
 Bank Details 
