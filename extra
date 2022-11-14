@@ -238,3 +238,31 @@ Please share your feedback to  Admin
 
 Thanks and Regards 
 Naresh
+
+
+
+HTML
+> Raw Structure
+> Tag
+CSS
+> Design
+> Properties
+JavaScript
+> logics
+
+
+head
+> all the linking
+> css, js except title nothing is visible to user
+body
+> All the content that is visible to user
+
+Inline
+> Start from the same line
+> Only take the space which is required
+> a, span ,img
+
+Block
+> Always start in the new line
+> Always take the whole width of screen
+> p , h1, div
