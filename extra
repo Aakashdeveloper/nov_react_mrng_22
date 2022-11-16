@@ -276,3 +276,41 @@ Skills
 Map
 Socail
 
+https://forms.gle/gfPvTp9dLdG7AVeL8
+
+
+////////CSS/////
+inline
+styleTag
+styleSheet
+
+inline>styleTag>styleSheet
+
+//inline
+{
+    "color":"red",
+    "width":"200px"
+}
+
+//styleTag
+{
+    "color":"orange",
+    "border":"2px solid red",
+    "height":"200px"
+}
+
+//styleSheet
+{
+    "width":"400px"
+    "height":"300px",
+    "border-radius":"30%"
+}
+
+///////
+{
+    "color":"red",
+    "width":"200px",
+    "border":"2px solid red",
+    "height":"200px",
+    "border-radius":"30%"
+}
