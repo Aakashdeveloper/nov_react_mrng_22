@@ -1,0 +1,41 @@
+body{
+    background:rgb(239, 224, 239)
+}
+header{
+    text-align: center;
+}
+
+/** Main Block **/
+#main{
+    margin-left:2%;
+    display: inline-block;
+}
+
+.card{
+    height:400px; 
+    width:20%;
+    background-color:#6c9ab9;
+    float: left;
+    margin:2%;
+    text-align: center;
+    overflow: scroll;
+}
+.card > img{
+    height:50%;
+    width:100%
+}
+.brown{
+    background-color:#baa994
+}
+#myBlue{
+    background:skyblue
+}
+.amber{
+    background-color:#d6a27c
+}
+
+
+/****Footer***/
+footer{
+    text-align: center
+}

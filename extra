@@ -316,3 +316,15 @@ inline>styleTag>styleSheet
 }
 
 https://htmlcolorcodes.com/
+
+
+//////Traget//////
+> ClassName
+* Where we have to target multiple elements with same property
+* (.)
+> Id
+* When we have to target something unique
+* (#)
+> TagName
+* When we target by tagName
+* (h1)
