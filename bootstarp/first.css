@@ -1,0 +1,11 @@
+.btn-purple{
+    background-color: rgb(188, 129, 244) !important;
+}
+.editLink{
+    font-size:20px;
+    color:green
+}
+.trashLink{
+    font-size:20px;
+    color:red
+}
