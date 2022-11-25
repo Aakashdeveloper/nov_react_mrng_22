@@ -9,3 +9,36 @@
     font-size:20px;
     color:red
 }
+#first{
+    height:200px;
+    background-color:skyblue
+}
+#second{
+    height:200px;
+    background-color:rgb(135, 235, 168)
+}
+#third{
+    height:200px;
+    background-color:rgb(237, 212, 138)
+}
+#fourth{
+    height:200px;
+    background-color:rgb(237, 138, 222)
+}
+#fifth{
+    height:200px;
+    background-color:rgb(151, 138, 237)
+}
+#sixth{
+    height:200px;
+    background-color:rgb(240, 187, 162)
+}
+#seventh{
+    height:200px;
+    background-color:rgb(240, 162, 162)
+}
+
+.item > img{
+    height:350px !important;
+    width:100%
+}
