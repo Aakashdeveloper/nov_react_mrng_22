@@ -358,3 +358,22 @@ boot4
 992px > lg
 1200px > xl
 1400px > xxl
+
+
+/////////////////
+Functional
+> Dumb Component
+> Only use for display Purpose
+> Cannot maintain state
+
+Class
+> Logical Component
+> Use for api calling, logics as well as display purpose
+> Can maintain state
+
+Hooks
+
+
+/////////
+State
+Props
