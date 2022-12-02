@@ -376,4 +376,19 @@ Hooks
 
 /////////
 State
+> Act like a local variable to the component
+> Each Component can have its own state
+> We can update the value of state
+> Any data interaction will happen through state
+
 Props
+> Help to transfer the data between 2 nested component
+> We cannot update the value of props
+
+
+var a = [1,2,3]
+undefined
+var b = [...a,5]
+undefined
+b
+(4) [1, 2, 3, 5]

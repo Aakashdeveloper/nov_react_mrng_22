@@ -8,7 +8,7 @@ const App = () => {
         <div>
             <Header/>
             <ProductDisplay/>
-            <Footer/>
+            <Footer year="2022" month="Dec"/>
         </div>
     )
 }
