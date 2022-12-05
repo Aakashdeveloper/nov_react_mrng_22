@@ -20,7 +20,7 @@ a.map((data) => {return `<p>${data*2}</p>`})
 
 var a = [0,4,5,56,78,34,12,36,9,18,27]
 
-a.filter((data) => {return data*30})
+a.filter((data) => {return data>30})
 [56, 78, 34, 36]
 
 a.map((data) => {return data>30})

@@ -386,6 +386,10 @@ Props
 > We cannot update the value of props
 
 
+parent > child (props)
+child > parent (props with function)
+
+
 var a = [1,2,3]
 undefined
 var b = [...a,5]
