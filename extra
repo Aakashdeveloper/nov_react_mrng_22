@@ -396,3 +396,20 @@ var b = [...a,5]
 undefined
 b
 (4) [1, 2, 3, 5]
+
+/////////
+npm i react-router-dom@5.3.0
+
+
+///////////////
+Params
+> What we pass after /
+> We need to define in the routing
+> If declared than need to pass
+> Should Use for passing 1 or 2 values
+
+QueryParams
+> What we pass after ?
+> No need to define
+> Not complusory to pass
+> Should use for passing multiple values

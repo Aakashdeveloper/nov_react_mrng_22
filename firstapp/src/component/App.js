@@ -19,6 +19,7 @@ class App extends Component {
         let output = this.state.productData.filter((data) => {
             return (data.name.toLowerCase().indexOf(keyword.toLowerCase()) > -1)
         })
+        
         this.setState({filteredData:output})
     }
 
