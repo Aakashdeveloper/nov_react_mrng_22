@@ -413,3 +413,31 @@ QueryParams
 > No need to define
 > Not complusory to pass
 > Should use for passing multiple values
+
+
+/////default props
+> history  (redireaction)
+> Location (queryParams)
+> Match (Params)
+
+
+var a = "?page=1"
+
+undefined
+a.split('=')
+(2) ['?page', '1']
+a.split('=')[1]
+'1'
+
+var a = "?page=1&city=delhi"
+
+var out = a.split('&')
+
+out
+(2) ['?page=1', 'city=delhi']
+out[1].split('=')
+(2) ['city', 'delhi']0: "city"1: "delhi"length: 2[[Prototype]]: Array(0)
+out[1].split('=')[1]
+'delhi'
+out[0].split('=')[1]
+'1'
