@@ -6,6 +6,7 @@ import Home from './Home';
 import Profile from './Profile';
 import PostDetails from './PostDetails';
 import Post from './Post';
+import Main from './main';
 
 
 const Routing = () => {
@@ -14,10 +15,13 @@ const Routing = () => {
             <Header/>
             <div className="container">
                 <Routes>
-                    <Route exact path="/" component={Home}/>
-                    <Route exact path="/post" component={Post}/>
-                    <Route path="/post/:topic" component={PostDetails}/>
-                    <Route path="/profile" component={Profile}/>
+                    <Route path="/" element={<Main/>}>
+                        <Route index element={<Home/>}/>
+                        <Route path="post" element={<Post/>}/>
+                        <Route path="post/:topic" element={<PostDetails/>}/>
+                        <Route path="profile" element={<Profile/>}/>
+                        <Route path="*" element={<h1>Not Found Page</h1>}/>
+                    </Route>
                 </Routes>
             </div>
             <Footer/>
