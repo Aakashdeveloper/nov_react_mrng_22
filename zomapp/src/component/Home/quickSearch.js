@@ -4,7 +4,31 @@ import './quicksearch.css';
 class QuickSearch extends Component{
     render(){
         return(
-            <h1>QuickSearch</h1>
+            <>
+            <div id="quickSearch">
+                <span id="QuickHeading">
+                    Quick Search
+                </span>
+                <span id="QuickSubHeading">
+                    Find Restaurants By Meal Type
+                </span>
+                <div id="mainContainer">
+                    <div className="tileContainer">
+                        <div className="tileComponent1">
+                            <img src="images/lunch.png" alt="breakfast"/>
+                        </div>
+                        <div className="tileComponent2">
+                            <div className="componentHeading">
+                                <a href="#">Breakfast</a>
+                            </div>
+                            <div className="componentSubHeading">
+                                Best Deal for Restaurants
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </>
         )
     }
 }

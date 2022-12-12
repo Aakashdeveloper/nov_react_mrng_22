@@ -1,6 +1,6 @@
 import React from 'react';
 import Search from './search';
-import QuickSearch from './quicksearch';
+import QuickSearch from './quickSearch';
 
 const Home = () => {
     return(
