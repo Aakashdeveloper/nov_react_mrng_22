@@ -1,36 +1,42 @@
-import React,{Component} from 'react';
+import React from 'react';
+import {Link} from 'react-router-dom';
 import './quicksearch.css';
 
-class QuickSearch extends Component{
-    render(){
-        return(
-            <>
-            <div id="quickSearch">
-                <span id="QuickHeading">
-                    Quick Search
-                </span>
-                <span id="QuickSubHeading">
-                    Find Restaurants By Meal Type
-                </span>
-                <div id="mainContainer">
-                    <div className="tileContainer">
-                        <div className="tileComponent1">
-                            <img src="images/lunch.png" alt="breakfast"/>
+const QuickDisplay =(props) => { 
+
+    const listMeal = ({mealData}) => {
+        if(mealData){
+            return mealData.map((item) => {
+                return(
+                    <Link to={`/listing/${item.mealtype_id}`}>
+                        <div className="tileContainer">
+                                <div className="tileComponent1">
+                                    <img src={item.meal_image} alt="breakfast"/>
+                                </div>
+                                <div className="tileComponent2">
+                                    <div className="componentHeading">
+                                        <p>{item.mealtype}</p>
+                                    </div>
+                                    <div className="componentSubHeading">
+                                        {item.content}
+                                    </div>
+                                </div>
                         </div>
-                        <div className="tileComponent2">
-                            <div className="componentHeading">
-                                <a href="#">Breakfast</a>
-                            </div>
-                            <div className="componentSubHeading">
-                                Best Deal for Restaurants
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </>
-        )
+                    </Link>
+                )
+            })
+        }
     }
+
+    
+    return(
+        <>
+            <div id="mainContainer">
+                {listMeal(props)}
+            </div>
+            
+        </>
+    )
 }
 
-export default QuickSearch
+export default QuickDisplay

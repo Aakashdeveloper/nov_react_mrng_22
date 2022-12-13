@@ -1,14 +1,16 @@
 import React,{Component} from 'react';
 import './search.css';
 
-const lurl = "http://3.17.216.66:4000/location"
+const lurl = "http://3.17.216.66:4000/location";
+const rurl = "http://3.17.216.66:4000/restaurant?stateId="
 class Search extends Component{
 
     constructor(){
         super()
         console.log(">>>>insie constructor")
         this.state={
-            location:''
+            location:'',
+            restData:''
         }
     }
 
@@ -22,8 +24,28 @@ class Search extends Component{
         }
     }
 
+    renderRest = (data) => {
+        if(data){
+            return data.map((item) => {
+                return (
+                    <option value={item.restaurant_id} key={item._id}>
+                        {item.restaurant_name} | {item.address}
+                    </option>
+                )
+            })
+        }
+    }
+
+    handleCity = (event) => {
+        console.log(event.target.value);
+        let statId = event.target.value
+        fetch(`${rurl}${statId}`,{method:'GET'})
+        .then((res) => res.json())
+        .then((data) => {this.setState({restData:data})})
+    }
+
     render(){
-        console.log(">>>>insie render")
+        //console.log(">>>>data",this.state.restData)
         return(
             <>
                 <div id="search">
@@ -34,12 +56,13 @@ class Search extends Component{
                         Find Best Place Near You
                     </div>
                     <div id="dropdown">
-                        <select>
+                        <select onChange={this.handleCity}>
                             <option>----Select Location----</option>
                             {this.renderCity(this.state.location)}
                         </select>
                         <select id="restSelect">
                             <option>----Select Restaurant----</option>
+                            {this.renderRest(this.state.restData)}
                         </select>
                     </div>
                 </div>
