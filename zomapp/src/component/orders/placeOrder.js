@@ -1,8 +1,8 @@
 import React,{Component} from 'react';
 import './placeOrder.css';
 
-const url = "";
-const placeOrder = "";
+const url = "http://3.17.216.66:4000/menuItem";
+const placeOrder = "http://localhost:2345/orders";
 
 class PlaceOrder extends Component {
     constructor(props) {
@@ -11,9 +11,9 @@ class PlaceOrder extends Component {
         this.state={
             id:Math.floor(Math.random() * 10000),
             hotel_name:this.props.match.params.restName,
-            name:'',
-            email:'',
-            phone:'',
+            name:'Nikita',
+            email:'niki@gmail.com',
+            phone:'987654321',
             cost:0,
             address:'UH 66 Y, Delhi',
             menuItem:''
@@ -21,7 +21,35 @@ class PlaceOrder extends Component {
     }
 
     handleChange = (event) => {
-       
+       this.setState({[event.target.name]:event.target.value})
+    }
+
+    handleCheckOut = () => {
+        let obj = this.state;
+        obj.menuItem = sessionStorage.getItem('menu');
+        fetch(placeOrder,{
+            method:'POST',
+            headers:{
+                'accept':'application/json',
+                'Content-Type':'application/json'
+            },
+            body:JSON.stringify(obj)
+        })
+        .then(this.props.history.push('/viewOrder'))
+    }
+
+    renderItem = (data) => {
+        if(data){
+            return data.map((item) => {
+                return(
+                    <div className="orderItems" key={item.menu_id}>
+                        <img src={item.menu_image} alt={item.menu_name}/>
+                        <h3>{item.menu_name}</h3>
+                        <h4>Rs. {item.menu_price}</h4>
+                    </div>
+                )
+            })
+        }
     }
 
     render(){
@@ -33,7 +61,7 @@ class PlaceOrder extends Component {
                             <h3>Your Order Form Restaurant {this.props.match.params.restName}</h3>
                         </div>
                         <div className="panel-body">
-                            <form>
+                            {/* <form> */}
                                 <div className="row">
                                     <input type="hidden" name="cost" value={this.state.cost}/>
                                     <input type="hidden" name="id" value={this.state.id}/>
@@ -59,20 +87,48 @@ class PlaceOrder extends Component {
                                         onChange={this.handleChange}/>
                                     </div> 
                                 </div>
+                                {this.renderItem(this.state.menuItem)}
                                 <div className="row">
                                     <div className="col-md-12">
                                         <h2>Total Price is Rs.{this.state.cost}</h2>
                                     </div>
                                 </div>
-                                <button className="btn btn-success">CheckOut</button>
+                                <button className="btn btn-success" onClick={this.handleCheckOut}>CheckOut</button>
 
-                            </form>
+                            {/* </form> */}
                         </div>
                     </div>
                 </div>
             </>
-        )
-        
+        ) 
+    }
+
+    componentDidMount(){
+        let menuItem = sessionStorage.getItem('menu');
+        let orderId = [];
+        menuItem.split(',').map((item) => {
+            orderId.push(parseInt(item))
+            return 'ok'
+        })
+        fetch(url,{
+            method: 'POST',
+            headers:{
+                'accept':'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(orderId)
+        })
+        .then((res) => res.json())
+        .then((data) => {
+            //console.log(data)
+            let totalPrice = 0;
+            data.map((item) => {
+                totalPrice += Number(item.menu_price)
+                return 'ok'
+            })
+            this.setState({menuItem:data,cost:totalPrice})
+        })
+
     }
 
 }

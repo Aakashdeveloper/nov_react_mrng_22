@@ -23,6 +23,7 @@ Npm
 React = 3
 Mock API
 json-server
+/////////////////////////
 Deployment
 -> MERN
 -> heroku
@@ -500,3 +501,11 @@ var a = [5,9,34,12,9,8]
 undefined
 a.indexOf(54)
 -1
+
+/////dummy api
+# windows
+> open cmd as admin
+> npm i -g json-server
+
+>>> When you want api
+> json-server --watch order.json --port 2345
