@@ -26,7 +26,6 @@ json-server
 /////////////////////////
 Deployment
 -> MERN
--> heroku
 -> Netlify
 -> ReactPy
 -> Aws
