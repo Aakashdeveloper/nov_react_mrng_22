@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 
-const url = "http://localhost:5100/api/auth/register";
+const url = "http://3.17.216.66:5000/api/auth/register";
 
 class Register extends Component {
     constructor(props) {
