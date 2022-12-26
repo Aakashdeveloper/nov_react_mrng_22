@@ -1,6 +1,5 @@
 import React,{Component} from 'react';
 import './placeOrder.css';
-import Header from '../../header';
 
 const url = "http://3.17.216.66:4000/menuItem";
 const placeOrder = "http://localhost:2345/orders";
@@ -8,13 +7,13 @@ const placeOrder = "http://localhost:2345/orders";
 class PlaceOrder extends Component {
     constructor(props) {
         super(props)
-        let sessionData = JSON.parse(sessionStorage.getItem('userInfo'))
+
         this.state={
             id:Math.floor(Math.random() * 10000),
             hotel_name:this.props.match.params.restName,
-            name:sessionData?sessionData['name']:'',
-            email:sessionData?sessionData['email']:'',
-            phone:sessionData?sessionData['phone']:'',
+            name:'Nikita',
+            email:'niki@gmail.com',
+            phone:'987654321',
             cost:0,
             address:'UH 66 Y, Delhi',
             menuItem:''
@@ -55,19 +54,8 @@ class PlaceOrder extends Component {
     }
 
     render(){
-        if(sessionStorage.getItem('loginStatus') === 'LoggedOut'){
-            return(
-                <>
-                    <Header/>
-                    <center>
-                        <h2>Login First to Place Orders</h2>
-                    </center>
-                </>
-            )
-        }
         return(
             <>
-            <Header/>
                 <div className="container">
                     <div className="panel panel-primary">
                         <div className="panel-heading">

@@ -7,19 +7,16 @@ import Listing from './component/Listing/listing';
 import RestDetails from './component/details/restDetails';
 import PlaceOrder from './component/orders/placeOrder';
 import ViewOrder from './component/orders/viewOrder';
-import Login from './component/login/login';
-import Register from './component/login/register';
 
 const Routing = () => {
     return(
         <BrowserRouter>
+            <Header/>
             <Route exact path="/" component={Home}/>
             <Route path="/listing/:mealId" component={Listing}/>
             <Route path="/details" component={RestDetails}/>
             <Route path="/placeOrder/:restName" component={PlaceOrder}/>
             <Route path="/viewBooking" component={ViewOrder}/>
-            <Route path="/login" component={Login}/>
-            <Route path="/register" component={Register}/>
             <Footer/>
         </BrowserRouter>
     )

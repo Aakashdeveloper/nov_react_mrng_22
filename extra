@@ -23,6 +23,7 @@ Npm
 React = 3
 Mock API
 json-server
+React-JWT(Login Logout)-2
 /////////////////////////
 Deployment
 -> MERN
@@ -32,7 +33,7 @@ Deployment
 -> Docker
 -> Nginx
 -> Jenkins
-React-JWT(Login Logout)-2
+
 React_hooks -1
 HOC
 React-GraphQL - 1 
