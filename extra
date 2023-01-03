@@ -30,10 +30,9 @@ Deployment
 -> Netlify
 -> Aws
 -> Docker
-/////////////////////////
 -> Nginx
 -> Jenkins
-
+/////////////////////////
 React_hooks -1
 HOC
 React-GraphQL - 1 
