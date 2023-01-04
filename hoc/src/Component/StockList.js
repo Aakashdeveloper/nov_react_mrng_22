@@ -2,30 +2,10 @@ import React, { Component } from 'react';
 import TableRow from './TableRow';
 
 class StockList extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-          stocks: [
-            {
-                id: 1,
-                name: 'TCS'
-                    
-            },
-            {
-                id: 2,
-                name: 'Infosys'
-            },
-            {
-                id: 3,
-                name: 'Reliance'
-            }
-          ]
-        };
-      }
       
       tabRow(){
-        if(this.state.stocks instanceof Array){
-          return this.state.stocks.map(function(object, i){
+        if(this.props.data instanceof Array){
+          return this.props.data.map(function(object, i){
               return <TableRow obj={object} key={i} />;
           })
         }

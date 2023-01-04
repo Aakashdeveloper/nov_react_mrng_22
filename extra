@@ -32,9 +32,10 @@ Deployment
 -> Docker
 -> Nginx
 -> Jenkins
-/////////////////////////
 React_hooks -1
 HOC
+/////////////////////////
+
 React-GraphQL - 1 
 Basic React Native- 1
 React-Redux - 1
@@ -536,3 +537,6 @@ add(1,2)
 /******UserInfo*****/
 (GET) => http://3.17.216.66:5000/api/auth/userinfo
 (Header) => {'x-access-token':'token value from login'}
+
+
+https://www.codingame.com/playgrounds/8595/reactjs-higher-order-components-tutorial
