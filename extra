@@ -34,13 +34,14 @@ Deployment
 -> Jenkins
 React_hooks -1
 HOC
+Basic React Native- 1
 /////////////////////////
 
 React-GraphQL - 1 
-Basic React Native- 1
-React-Redux - 1
-React-Redux - 1
 React-PWA - 1
+
+React-Redux - 1
+React-Redux - 1
 ReactMaps
 Github
 Testing Jest Enzime
@@ -540,3 +541,9 @@ add(1,2)
 
 
 https://www.codingame.com/playgrounds/8595/reactjs-higher-order-components-tutorial
+
+
+////////////////////////////////////////////////////////////////
+npm i -g create-react-native-app
+
+create-react-native-app appname
