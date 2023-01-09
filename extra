@@ -545,3 +545,9 @@ https://www.codingame.com/playgrounds/8595/reactjs-higher-order-components-tutor
 npm i -g create-react-native-app
 
 create-react-native-app appname
+
+
+Action >> Where all Api Calls happen
+Reducer >> Help to manage state
+Store >> Save the latest state
+View  >> Display on the screen
