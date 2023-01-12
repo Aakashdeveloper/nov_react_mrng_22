@@ -3,7 +3,7 @@ import mapboxgl from "mapbox-gl";
 import 'mapbox-gl/dist/mapbox-gl.css';
 import './map.css';
 
-const coordsUrl = "https://brewmusepk.herokuapp.com/store";
+const coordsUrl = "http://localhost:7780/location";
 mapboxgl.accessToken = "pk.eyJ1IjoicGFua2Fqa3VtYXI5OSIsImEiOiJja3RzYjlxemQwYWY2MnBvMzBxczV6bHVyIn0.BlMzug6pTDIMl4kp_2zhqQ";
 
 class Stores extends Component {

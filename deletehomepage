@@ -1,0 +1,24 @@
+https://raw.githubusercontent.com/Aakashdeveloper/Aakashdeveloper/master/README.md
+
+
+/////First Time from New Folder///
+git init
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/Aakashdeveloper/UserProfile1.git
+git push -u origin master
+
+//optinal
+git config global user.name "Aakashdeveloper"
+git config global user.email "a@a.com"
+
+
+///Next All Time from same folder
+git add .
+git commit -m "first commit"
+git push
+
+
+setting > pages
+Branch
+> master
